@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import type { TodosRecord, ApiError } from '@/types/airtable';
-import { table, minifyRecords } from './utils/Airtable';
+import { table, minifyRecords } from '@/api/utils/Airtable';
 
 export default async function handler(
   req: NextApiRequest,
