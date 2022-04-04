@@ -1,5 +1,5 @@
-import { TodosRecord } from '@/types/airtable';
 import React from 'react';
+import { TodosRecord } from '@/types/airtable';
 import cn from 'classnames';
 import { useTodosContext } from '@/contexts/TodosContext';
 

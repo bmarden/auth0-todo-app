@@ -19,7 +19,11 @@
       "@/types/*": ["src/types/*"],
       "@/api/*": ["src/pages/api/*"],
       "@/pages/*": ["src/pages/*"],
-      "@/contexts/*": ["src/contexts/*"]
+      "@/common/*": ["src/common/*"],
+      "@/contexts/*": ["src/common/contexts/*"],
+      "@/todos/*": ["src/modules/Todos/*"],
+      "@/nav/*": ["src/modules/Nav/*"],
+      "@/styles/*": ["src/styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

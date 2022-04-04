@@ -1,8 +1,8 @@
 import type { InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
-import NavBar from '../components/NavBar';
+import NavBar from '@/nav/NavBar';
 import { table, minifyRecords } from '@/api/utils/Airtable';
-import Todo from 'src/components/Todo';
+import Todo from '@/todos/Todo';
 import { TodosRecord } from '@/types/airtable';
 import { useTodosContext } from '@/contexts/TodosContext';
 import { useEffect } from 'react';

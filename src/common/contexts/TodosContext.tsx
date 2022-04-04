@@ -1,6 +1,6 @@
 import { TodosRecord } from '@/types/airtable';
 import { Dispatch, ReactNode, SetStateAction, useState, useContext } from 'react';
-import { createCtx } from '@/contexts/contextHelper';
+import { createCtx } from 'src/common/contexts/contextHelper';
 
 interface Context {
   todos: TodosRecord[];
