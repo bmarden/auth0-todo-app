@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
 import NavBar from '@/nav/NavBar';
@@ -5,7 +6,9 @@ import { table, minifyRecords } from '@/api/utils/Airtable';
 import Todo from '@/todos/Todo';
 import { TodosRecord } from '@/types/airtable';
 import { useTodosContext } from '@/contexts/TodosContext';
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
+import NavDropdown from '@/nav/NavDropdown';
+import { Menu, Transition } from '@headlessui/react';
 
 const Home = ({ initialTodos }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { todos, setTodos } = useTodosContext();

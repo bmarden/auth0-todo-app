@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <UserProvider>
       <TodosProvider>
-        <div className="container mx-auto my-10 max-w-xl">
+        <div className="container mx-auto my-10">
           <Component {...pageProps} />
         </div>
       </TodosProvider>
